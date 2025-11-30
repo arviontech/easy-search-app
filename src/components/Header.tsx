@@ -7,9 +7,10 @@ import { BRAND_COLOR, SHADOW_MD } from '../constants'
 
 interface HeaderProps {
     onMenuPress: () => void
+    onProfilePress?: () => void
 }
 
-const Header = ({ onMenuPress }: HeaderProps) => {
+const Header = ({ onMenuPress, onProfilePress }: HeaderProps) => {
     const insets = useSafeAreaInsets()
 
     return (
@@ -38,8 +39,11 @@ const Header = ({ onMenuPress }: HeaderProps) => {
                         <View style={styles.notificationBadge} />
                     </TouchableOpacity>
 
-                    {/* Profile Button */}
-                    <TouchableOpacity style={styles.headerButton}>
+                    {/* Profile Button - Navigate to Dashboard */}
+                    <TouchableOpacity
+                        style={styles.headerButton}
+                        onPress={onProfilePress}
+                    >
                         <View style={styles.profileCircle}>
                             <Ionicons name="person" size={16} color="#ffffff" />
                         </View>

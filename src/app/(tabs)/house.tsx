@@ -178,7 +178,7 @@ const House = () => {
                     numColumns={2}
                     columnWrapperStyle={{ justifyContent: 'space-between' }}
                     showsVerticalScrollIndicator={false}
-                    contentContainerStyle={{ paddingBottom: 20 }}
+                    contentContainerStyle={{ paddingBottom: 140 }}
                     ListEmptyComponent={
                         <View className="items-center justify-center py-20">
                             <Ionicons name="home-outline" size={48} color="#D1D5DB" />

@@ -155,7 +155,6 @@ const Hostel = () => {
                     />
                 </View>
 
-                {/* Hostel List */}
                 <FlatList
                     data={filteredHostels}
                     keyExtractor={(item) => item.id}
@@ -163,7 +162,7 @@ const Hostel = () => {
                     numColumns={2}
                     columnWrapperStyle={{ justifyContent: 'space-between' }}
                     showsVerticalScrollIndicator={false}
-                    contentContainerStyle={{ paddingBottom: 20 }}
+                    contentContainerStyle={{ paddingBottom: 140 }}
                     ListEmptyComponent={
                         <View className="items-center justify-center py-20">
                             <Ionicons name="bed-outline" size={48} color="#D1D5DB" />
